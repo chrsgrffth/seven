@@ -1,0 +1,22 @@
+---
+---
+@charset 'utf-8';
+
+@import 'settings';
+@import 'decent/color';
+@import 'decent/debug';
+@import 'decent/display';
+@import 'decent/flex';
+@import 'decent/floats';
+@import 'decent/grid';
+@import 'decent/interaction';
+@import 'decent/lengths';
+@import 'decent/overlay';
+@import 'decent/position';
+@import 'decent/reset';
+@import 'decent/spacing';
+@import 'decent/style';
+@import 'decent/table';
+@import 'decent/type';
+
+* { box-sizing: border-box; }
