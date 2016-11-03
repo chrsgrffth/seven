@@ -24,10 +24,28 @@ url: "http://example.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+permalink: pretty
+
+
+# Collections
+collections:
+  work:
+    output: true
+
+defaults:
+  -
+    scope:
+      type: work
+    values:
+      layout: work
+
+    # path: "/work"
+    # layout: "work"
+    # output: true
+
+
 # Build settings
 markdown: kramdown
-
 livereload: true
-
 sass:
   sass_dir: ./css
