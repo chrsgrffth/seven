@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<article class="">
+  
+  <section class="container mb-4 px-2">
+    <section class="container">
+
+      <div class="row mb-3">
+        <div class="col-md-8 push-md-1">
+          <div class="tn-1 mb-3">{{ page.title }}</div>
+          <div class="tn-1 cg-1">{{ page.overview | markdownify }}</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 push-md-1">
+          <h3 class="tn-2 tw-medium mb-1">Year</h3>
+          <p class="tn-1">0000</p>
+        </div>
+        <div class="col-md-3 ">
+          <h3 class="tn-2 tw-medium mb-1">Role</h3>
+          <p class="tn-1">Visual Design</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  {% for section in page.sections %}
+
+    <section class="px-1 py-5" {% if section.background %}style="background-color: {{ section.background }}"{% endif %}>
+      <div class="container">
+        {% if section.type == 'assets' %}
+          {% for asset in section.assets %}
+            <img src="{{ asset.url }}" class="wp-100 shadow" />
+          {% endfor %}
+        {% endif %}
+
+
+        {% if section.type == 'markdown' %}
+          <div class="col-md-8 push-md-1 tn-1">
+            {{ section.content | markdownify }}
+          </div>
+        {% endif %}
+
+      </div>
+    </section>
+
+  {% endfor %}
+
+</article>
