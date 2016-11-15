@@ -2,47 +2,36 @@
 layout: default
 ---
 
-<div class="container">
-
-  <div class="row mb-6">
-    <div class="col-md-5">
-      <p class="tn-1 mb-3">I'm a designer and developer working in Santa Cruz, California. I am currently working with the über-talented team at <a href="#" class="underline">Octopus</a>. I am at home designing products and geeking out over CSS structure, and I excel where design meets code.</p>
-      <p class="tn-1"><a href="#" class="underline">More About Me</a></p>
-    </div>
-  </div>
-
-  {% for work in site.work %}
-
-    <div class="">
-      <div class="tn-2 cg-3">01</div>
-      <a href="{{ work.url | relative_url }}" title="{{ work.title }}">{{ work.title }}</a>
-    </div>
-
-    <div class="">
-      <div class="tn-2 cg-3">01</div>
-      <a href="{{ work.url | relative_url }}" title="{{ work.title }}">{{ work.title }}</a>
-    </div>
-
-  {% endfor %}
-
-  <!--
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        {{ post.url  }}
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+<main class="pt-5 px-1 px-sm-3">
+  <div class="container">
+    {% for work in site.work %}
+      <a href="{{ work.url | relative_url }}" title="{{ work.title }}" class="flex items-baseline relative p-2">
+        <div class="col-2 heading antialiased tn-2 cg-4">0{{ forloop.index }}</div>
+        <div>
+          <h1 class="heading t-0 t-md-1 mb-1 antialased c-black">{{ work.title }}</h1>
+          <div class="heading tn-2 cg-3 antialiased">{% for role in work.roles %}{{ role }}{% endfor %}</div>
+        </div>
+      </a>
     {% endfor %}
-  </ul>
+    <!--
+    <h1 class="page-heading">Posts</h1>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  -->
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-</div>
+          {{ post.url  }}
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    -->
+
+  </div>
+</main>

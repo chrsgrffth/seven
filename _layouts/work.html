@@ -2,26 +2,30 @@
 layout: default
 ---
 
-<article class="">
+<article class="pt-5">
   
-  <section class="container mb-4 px-2">
+  <section class="mb-5 px-2">
     <section class="container">
 
-      <div class="row mb-3">
-        <div class="col-md-8 push-md-1">
-          <div class="tn-1 mb-3">{{ page.title }}</div>
-          <div class="tn-1 cg-1">{{ page.overview | markdownify }}</div>
+      <div class="flex px-1 items-baseline">
+        <div class="col-md-2">
+          <h2 class="heading tn-2 cg-4 antialiased">Overview</h2>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-2 push-md-1">
-          <h3 class="tn-2 tw-medium mb-1">Year</h3>
-          <p class="tn-1">0000</p>
-        </div>
-        <div class="col-md-3 ">
-          <h3 class="tn-2 tw-medium mb-1">Role</h3>
-          <p class="tn-1">Visual Design</p>
+        <div class="col-md-8">
+          <div class="heading t-1 t-md-2 mb-2">{{ page.title }}</div>
+          <div class="cg-1 antialiased mb-3">{{ page.overview | markdownify }}</div>
+
+          <div class="flex mln-2">
+            <div class="px-2">
+              <h3 class="heading tn-3 cg-3 antialiased mb-1">Year</h3>
+              <p class="tn-1">{{ page.year }}</p>
+            </div>
+            <div class="px-2">
+              <h3 class="heading tn-3 cg-3 antialiased mb-1">Role</h3>
+              <p class="tn-1">{% for role in page.roles %}{{ role }}{% endfor %}</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -29,18 +33,28 @@ layout: default
 
   {% for section in page.sections %}
 
-    <section class="px-1 py-5" {% if section.background %}style="background-color: {{ section.background }}"{% endif %}>
-      <div class="container">
+    <section class="py-3" {% if section.background %}style="background-color: {{ section.background }}"{% endif %}>
+     
+
         {% if section.type == 'assets' %}
-          {% for asset in section.assets %}
-            <img src="{{ asset.url }}" class="wp-100 shadow" />
-          {% endfor %}
+          <!-- <div class="zoomViewport py-4">
+            <div class="zoomContainer"> -->
+              <div class="container">
+              {% for asset in section.assets %}
+                <div class="p-2 zoomTarget" data-targetsize="1.25" data-closeclick="true">
+                  <img src="{{ asset.url }}" class="wp-100 shadow" />
+                </div>
+              {% endfor %}
+              </div>
+            <!-- </div>
+          </div> -->
         {% endif %}
 
-
         {% if section.type == 'markdown' %}
-          <div class="col-md-8 push-md-1 tn-1">
-            {{ section.content | markdownify }}
+          <div class="container">
+            <div class="col-md-8 push-md-1 tn-1">
+              {{ section.content | markdownify }}
+            </div>
           </div>
         {% endif %}
 
