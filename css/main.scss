@@ -2,6 +2,20 @@
 ---
 @charset 'utf-8';
 
+// Google Fonts – Abel.
+@import 'https://fonts.googleapis.com/css?family=Abel';
+
+// Simplon Norm Medium.
+@font-face {
+  font-family: 'Simplon Norm';
+  src: url('https://s3-us-west-2.amazonaws.com/chrsgrffth/fonts/SimplonNorm-Medium.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/chrsgrffth/fonts/SimplonNorm-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://s3-us-west-2.amazonaws.com/chrsgrffth/fonts/SimplonNorm-Medium.woff') format('woff'),
+    url('https://s3-us-west-2.amazonaws.com/chrsgrffth/fonts/SimplonNorm-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 @import 'settings';
 @import 'decent/color';
 @import 'decent/debug';
@@ -20,3 +34,9 @@
 @import 'decent/type';
 
 * { box-sizing: border-box; }
+
+.heading {
+  @extend .display;
+  @extend .uppercase;
+  @extend .tracked;
+}
