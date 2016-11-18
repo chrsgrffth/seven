@@ -37,17 +37,16 @@ layout: default
      
 
         {% if section.type == 'assets' %}
-          <!-- <div class="zoomViewport py-4">
-            <div class="zoomContainer"> -->
-              <div class="container">
-              {% for asset in section.assets %}
-                <div class="p-2 zoomTarget" data-targetsize="1.25" data-closeclick="true">
-                  <img src="{{ asset.url }}" class="wp-100 shadow" />
-                </div>
-              {% endfor %}
+          <div class="container">
+            {% for asset in section.assets %}
+              <div class="p-2">
+                <img src="{{ asset.url }}" class="wp-100 shadow focus" />
               </div>
-            <!-- </div>
-          </div> -->
+              <div class="p-2">
+                <img src="{{ asset.url }}" class="wp-100 shadow focus" />
+              </div>
+            {% endfor %}
+          </div>
         {% endif %}
 
         {% if section.type == 'markdown' %}
