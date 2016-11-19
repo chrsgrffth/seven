@@ -1,6 +1,5 @@
 module.exports = {
   paths: {
-    public: '_site',
     watched: ['source']
   },
 
@@ -24,7 +23,13 @@ module.exports = {
 
   npm: {
     aliases: {
-      'decent': 'decent-scss/modules/all'
+      'decent': 'decent-scss/modules/all',
+      'vue': 'vue/dist/vue.js'
+    },
+
+    globals: {
+      'TweenLite': 'gsap/src/uncompressed/TweenLite',
+      'TweenMax': 'gsap/src/uncompressed/TweenMax'
     }
   },
 
