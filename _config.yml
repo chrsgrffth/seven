@@ -26,7 +26,6 @@ github_username:  chrsgrffth
 
 permalink: pretty
 
-
 # Collections
 collections:
   work:
@@ -55,4 +54,6 @@ exclude:
 keep_files:
   - 'css'
   - 'js'
+source: jekyll
+destination: public
 

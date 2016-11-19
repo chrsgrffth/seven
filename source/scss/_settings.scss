@@ -64,3 +64,17 @@ $default-border-color:    #e8e9eb;
 
 // Shadow
 $default-box-shadow:      0 20px 24px -14px rgba(0, 0, 0, 0.1);
+
+// Interactions.
+$interactions: (
+  scaleUp: (
+    settings: (
+    ),
+    start: (
+      transform: translate3d(0,0,0) scale(1)
+    ),
+    end: (
+      transform: translate3d(0,0,0) scale(1.025)
+    )
+  )
+)
