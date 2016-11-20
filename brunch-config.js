@@ -5,10 +5,7 @@ module.exports = {
 
   files: {
     javascripts: {
-      joinTo: 'js/main.js',
-      autoRequire: {
-        'js/main.js': ['./js/initialize']
-      }
+      joinTo: 'js/main.js'
     },
     stylesheets: {
       sourceFiles: ['init.scss'],
@@ -28,8 +25,9 @@ module.exports = {
     },
 
     globals: {
-      'TweenLite': 'gsap/src/uncompressed/TweenLite',
-      'TweenMax': 'gsap/src/uncompressed/TweenMax'
+      'jQuery': 'jquery',
+      '$': 'jquery',
+      'smoothState': 'smoothstate'
     }
   },
 

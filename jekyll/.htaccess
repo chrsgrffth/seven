@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  <filesMatch ".(css|js)$">
+    Header set Cache-Control "max-age=604800, public"
+  </filesMatch>
+</IfModule>
