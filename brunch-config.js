@@ -25,14 +25,9 @@ module.exports = {
     },
 
     globals: {
-<<<<<<< HEAD
-      'TweenLite': 'gsap/src/uncompressed/TweenLite',
-      'TweenMax': 'gsap/src/uncompressed/TweenMax'
-=======
       'jQuery': 'jquery',
       '$': 'jquery',
       'smoothState': 'smoothstate'
->>>>>>> develop
     }
   },
 

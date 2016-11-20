@@ -1,10 +1,16 @@
-import TweenMax from 'gsap/src/uncompressed/TweenMax';
+import TweenMax from 'gsap/src/uncompressed/TweenMax'
 import WebFont from 'webfontloader'
+import Transition from './helpers/transitions'
 
 $(function() {
   'use strict';
 
+  var $document = jQuery(document);
 
+  // Transition the page in when JS has loaded.
+  Transition.page('in');
+
+  // Load in the fonts when JS has loaded.
   WebFont.load({
     google: {
       families: ['Rubik']
@@ -14,6 +20,7 @@ $(function() {
     }
   });
 
+  // Set up SmoothState.
   $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
     options.async = true;
   });
@@ -22,56 +29,38 @@ $(function() {
     prefetch: true,
     cacheLength: 2,
     onStart: {
-      duration: 1000,
+      duration: 550,
         render: function ($container) {
-          TweenMax.staggerFromTo('.animate .stagger-item', 0.5, {y: 0}, {y: -50, opacity: 0}, 0.05);
+          Transition.page('out');
         }
     },
     onReady: {
-      duration: 1000,
+      duration: 550,
       render: function ($container, $newContent) {
         $container.html($newContent);
 
-        TweenMax.staggerFromTo('.animate .stagger-item', 0.5, {y: 50, opacity: 0}, {y: 0, opacity: 1}, 0.05);
+        Transition.page('in');
       }
     }
   };
 
+  // Instantiate Smoothstate.
   const smoothstate = $('#main').smoothState(options).data('smoothState');
 
-  $(document).on('click', 'a.smooth', function(e) {
+  // Event handlers.
+  $document.on('click', 'a.smooth', function(e) {
     e.preventDefault();
     smoothstate.load($(this).attr('href'));
   });
+
+  $document.on('mouseover', '.mouseenter-focusIn', function() {
+    Transition.focus(this, 'in');
+  });
+
+  $document.on('mouseout', '.mouseenter-focusIn', function() {
+    Transition.focus(this, 'out');
+  });
+
 });
 
 
-// $(function(){
-//   'use strict';
-//   var options = {
-//     prefetch: true,
-//     cacheLength: 2,
-//     onStart: {
-//       duration: 250, // Duration of our animation
-//       render: function ($container) {
-//         // Add your CSS animation reversing class
-//         $container.addClass('is-exiting');
-
-//         // Restart your animation
-//         smoothState.restartCSSAnimations();
-//       }
-//     },
-//     onReady: {
-//       duration: 0,
-//       render: function ($container, $newContent) {
-//         // Remove your CSS animation reversing class
-//         $container.removeClass('is-exiting');
-
-//         // Inject the new content
-//         $container.html($newContent);
-
-//       }
-//     }
-//   },
-//   smoothState = $('#main').smoothState(options).data('smoothState');
-// });
