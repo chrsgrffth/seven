@@ -10,13 +10,17 @@
 </head>
 
 <body>
-  <header id="global-header" class="px-1 px-sm-2 py-2 py-sm-4 wp-100">
+  <header id="global-header" class="px-1 py-2 sm-px-2 lg-py-4 wp-100">
     <div class="container">
-      <div class="flex flex-start">
-        <div class="col-8 px-2">
-          <h1>
-            <a href="/" data-transition="up" class="d-block heading tn-2 tn-md-1 c-black antialiased">Christian Griffith</a>
-          </h1>
+      <div class="md-flex items-center">
+        <h1>
+          <a href="/" class="d-block p-1 heading tn-1 c-black antialiased smooth">Christian Griffith</a>
+        </h1>
+
+        <div class="md-flex item-right ta-right">
+          <p>{% if site.github_username %}<a href="//github.com/{{ site.github_username }}" class="p-1 display tn-2 c-black antialiased">Github</a>{% endif %}</p>
+           <p>{% if site.instagram_username %}<a href="//instagram.com/{{ site.instagram_username }}" class="p-1 display tn-2 c-black antialiased">Instagram</a>{% endif %}</p>
+           <p>{% if site.dribbble_username %}<a href="//dribbble.com/{{ site.dribbble_username }}" class="p-1 display tn-2 c-black antialiased">Dribbble</a>{% endif %}</p>
         </div>
       </div>
     </div>

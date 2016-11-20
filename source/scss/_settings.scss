@@ -5,7 +5,7 @@ $rem-base:                17px;
 $ratio:                   1.275;
 
 // Grid settings.
-$container-width:         60rem;
+$container-width:         61.125rem;
 $columns:                 12;
 
 // Breakpoints.
@@ -43,10 +43,11 @@ $fw-bold:                 600;
 // Defaults.
 
 // Typography.
-$default-type-family:     'Abel', 'Arial', serif;
+$default-type-family:     'Simplon Norm Trial', 'Arial', serif;
 $default-type-color:      #313233;
-$default-line-height:     1.7;
-$default-type-weight:     200;
+$default-line-height:     1.8;
+$default-type-weight:     400;
+$default-letter-spacing:  0;
 
 $display-type-family:     'Simplon Norm', sans-serif;
 $display-type-transform:  uppercase;
@@ -54,8 +55,8 @@ $display-letter-spacing:  0.1em;
 $display-line-height:     1.5;
 $display-type-weight:     500;
 
-
 $length-increments:       0.6 1.6 2.6 4.2 6.8 11 18 29 46 75 !default;
+$spacing-increments:      0.6 1.6 2.6 4.2 6.8 11 14 29 46 75 !default;
 
 // Borders.
 $default-border-radius:   2px;

@@ -1,8 +1,5 @@
 @charset 'utf-8';
 
-// Google Fonts – Abel.
-@import 'https://fonts.googleapis.com/css?family=Abel';
-
 // Simplon Norm Medium.
 @font-face {
   font-family: 'Simplon Norm';
@@ -16,6 +13,9 @@
 
 @import 'settings';
 @import 'node_modules/decent-scss/modules/all';
+
+@import 'global/base';
+@import 'global/markdown';
 
 * { box-sizing: border-box; }
 

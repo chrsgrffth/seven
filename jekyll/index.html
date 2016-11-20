@@ -2,37 +2,16 @@
 layout: default
 ---
 
-<main class="pt-6 px-1 px-sm-2">
-
+<main class="pt-7 px-1 px-sm-2 animate">
   <div class="container">
     {% for work in site.work %}
-      <a href="{{ work.url | relative_url }}" title="{{ work.title }}" class="flex items-baseline relative p-2">
-        <div class="col-2 heading antialiased tn-2 cg-4">0{{ forloop.index }}</div>
+      <a href="{{ work.url | relative_url }}" title="{{ work.title }}" class="flex items-baseline relative p-2 mb-2 animate">
+        <div class="col-2 heading antialiased tn-2 cg-4 stagger-item">0{{ forloop.index }}</div>
         <div>
-          <h1 class="heading t-0 t-md-1 mb-1 antialased c-black">{{ work.title }}</h1>
-          <div class="heading tn-2 cg-3 antialiased">{% for role in work.roles %}{{ role }}{% endfor %}</div>
+          <h1 class="heading t-0 md-t-1 mb-1 antialased c-black stagger-item">{{ work.title }}</h1>
+          <div class="heading tn-2 cg-4 antialiased stagger-item">{% for role in work.roles %}{{ role }}{% if forloop.last != true %}, {% endif %}{% endfor %}</div>
         </div>
       </a>
     {% endfor %}
-    <!--
-    <h1 class="page-heading">Posts</h1>
-
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          {{ post.url  }}
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-    -->
-
   </div>
 </main>

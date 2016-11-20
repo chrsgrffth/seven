@@ -4,3 +4,6 @@ _site
 .jekyll-metadata
 .DS_Store
 node_modules
+
+# Ignore the rakefile until I can secure it.
+Rakefile
