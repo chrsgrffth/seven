@@ -23,11 +23,11 @@ layout: default
   </section>
 
   {% for section in page.sections %}
-    <section {% if section.background %}class="py-4 mb-4 stagger-item" style="background-color: {{ section.background }}"{% else %}class="pt-2 mb-4"{% endif %}>
+    <section {% if section.background %}class="py-4 mb-4 stagger-item" style="background-color: {{ section.background }}"{% else %}class="pt-2 mb-4 stagger-item"{% endif %}>
 
         {% if section.type == 'assets' %}
-          <div class="container">
-            <div class="flex justify-center">
+          <div class="container o-auto">
+            <div class="flex justify-center wp-250 md-wp-100 px-2 lg-px-0">
               {% for asset in section.assets %}
                 <div class="p-1 {% if asset.width %}col-{{ asset.width }}{% endif %}">
                   <img src="{{ asset.url }}" class="wp-100 {% if section.shadow %}shadow{% endif %}" />
@@ -39,7 +39,7 @@ layout: default
 
         {% if section.type == 'markdown' %}
           <div class="container">
-            <div class="md-col-6 md-push-2 markdown">
+            <div class="md-col-6 md-push-2 markdown px-2">
               {{ section.content | markdownify }}
             </div>
           </div>
