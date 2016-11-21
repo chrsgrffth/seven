@@ -9,6 +9,7 @@ $(function() {
 
   // Transition the page in when JS has loaded.
   Transition.page('in');
+  Transition.bindEventListeners();
 
   // Load in the fonts when JS has loaded.
   WebFont.load({
@@ -29,7 +30,7 @@ $(function() {
     prefetch: true,
     cacheLength: 2,
     onStart: {
-      duration: 550,
+      duration: 1100,
         render: function ($container) {
           Transition.page('out');
         }
@@ -40,6 +41,7 @@ $(function() {
         $container.html($newContent);
 
         Transition.page('in');
+        Transition.bindEventListeners();
       }
     }
   };
@@ -50,17 +52,11 @@ $(function() {
   // Event handlers.
   $document.on('click', 'a.smooth', function(e) {
     e.preventDefault();
-    smoothstate.load($(this).attr('href'));
-  });
-
-  $document.on('mouseover', '.mouseenter-focusIn', function() {
-    Transition.focus(this, 'in');
-  });
-
-  $document.on('mouseout', '.mouseenter-focusIn', function() {
-    Transition.focus(this, 'out');
+    let path = $(this).attr('href');
+    if (path != window.location.pathname) {
+      smoothstate.load(path);
+    }
   });
 
 });
-
 

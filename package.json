@@ -8,6 +8,9 @@
   },
   "author": "Chris Griffith",
   "license": "ISC",
+  "scripts": {
+    "start": "brunch watch --server"
+  },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
     "autoprefixer": "^6.4.1",

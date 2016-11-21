@@ -38,14 +38,6 @@ defaults:
     values:
       layout: work
 
-<<<<<<< HEAD
-    # path: "/work"
-    # layout: "work"
-    # output: true
-
-
-=======
->>>>>>> develop
 # Build settings
 markdown: kramdown
 livereload: true
