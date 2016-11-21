@@ -50,7 +50,3 @@ keep_files:
   - 'js'
 source: jekyll
 destination: public
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
