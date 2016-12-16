@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="py-7 animate animate">
+<article class="py-7 animate">
   <section class="mb-5 px-2">
     <div class="container">
       <div class="md-flex sm-px-2 items-baseline">
@@ -10,7 +10,7 @@ layout: default
           <h2 class="display tn-2 cg-4 antialiased mb-2">{{ page.year }}</h2>
         </div>
         <div class="md-col-6">
-          <div class="display t-1 md-t-2 mb-2 stagger-item">{{ page.title }}</div>
+          <h1 class="display t-1 md-t-2 mb-2 stagger-item">{{ page.title }}</h1>
           <div class="cg-1 antialiased mb-4 stagger-item">{{ page.overview | markdownify }}</div>
           <div class="flex mln-2 stagger-item">
             <div class="px-2">
@@ -23,7 +23,11 @@ layout: default
   </section>
 
   {% for section in page.sections %}
-    <section {% if section.background %}class="py-4 mb-4 stagger-item" style="background-color: {{ section.background }}"{% else %}class="pt-2 mb-4 stagger-item"{% endif %}>
+    <section {% if section.background %}class="pt-4 pb-2 mb-4 stagger-item relative"{% else %}class="mb-4 stagger-item relative"{% endif %}>
+        {% if section.background %}
+          <div class="absolute top-0 right-0 hp-80 wp-90 zn-1 stagger-item" style="background-color: {{ section.background }}"></div>
+        {% endif %}
+
 
         {% if section.type == 'assets' %}
           <div class="container o-auto">

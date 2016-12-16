@@ -6,7 +6,7 @@ year: 2016
 roles:
  - Visual Design
 overview: |
-  ### Spera is building a product with the goal of keeping alumni of addiction rehabilitation in touch with both each other and their mentors. With all of the business work and initial planning, all Spera needed was a design to bring their product to market.
+  Spera is building a product with the goal of keeping alumni of addiction rehabilitation in touch with both each other and their mentors. With all of the business work and initial planning, all Spera needed was a design to bring their product to market.
 sections:
   -
     type: 'assets'
@@ -27,7 +27,7 @@ sections:
   -
     type: 'assets'
     shadow: 1
-    assets: 
+    assets:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Home.png
@@ -48,7 +48,7 @@ sections:
   -
     type: 'assets'
     shadow: 1
-    assets: 
+    assets:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Contacts.png
@@ -68,7 +68,7 @@ sections:
       The first objective of this project was to identify a visual direction for the platform. The direction would inform the design of further screens and components in the design system. Spera's founders wanted the platform to feel light-hearted and professional.
   -
     type: 'assets'
-    assets: 
+    assets:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Settings-Sharing.png
@@ -90,14 +90,14 @@ sections:
     type: 'assets'
     background: '#f7f8f9'
     shadow: 1
-    assets: 
+    assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Desktop-Home.png
         alt: 'Spera Health desktop dashboard.'
   -
     type: 'assets'
     shadow: 1
-    assets: 
+    assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Desktop-Main.png
         alt: 'Spera Health desktop dashboard.'
@@ -108,14 +108,14 @@ sections:
       The first objective of this project was to identify a visual direction for the platform. The direction would inform the design of further screens and components in the design system. Spera's founders wanted the platform to feel light-hearted and professional.
   -
     type: 'assets'
-    assets: 
+    assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Pattern-Library--Specs.png
         alt: 'Spera Health desktop dashboard.'
   -
     type: 'assets'
     background: '#f7f8f9'
-    assets: 
+    assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Pattern-Library.png
         alt: 'Spera Health desktop dashboard.'

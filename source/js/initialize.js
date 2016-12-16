@@ -57,6 +57,4 @@ $(function() {
       smoothstate.load(path);
     }
   });
-
 });
-

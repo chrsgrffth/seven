@@ -1,8 +1,8 @@
 // Rem base.
-$rem-base:                17px;
+$rem-base:                15px;
 
 // Scale ratio.
-$ratio:                   1.275;
+$ratio:                   1.2;
 
 // Grid settings.
 $container-width:         61.125rem;
@@ -51,14 +51,14 @@ $default-letter-spacing:  0;
 
 $display-type-family:     'Simplon Norm', sans-serif;
 $display-type-transform:  uppercase;
-$display-letter-spacing:  0.1em;
+$display-type-tracking:   0.15em;
 $display-line-height:     1.5;
 $display-type-weight:     500;
 
 $length-increments:       0.6 1.6 2.6 4.2 6.8 11 18 29 46 75 !default;
 $percentage-length-increments: 0 10 20 25 40 50 60 75 80 90 100 150 200 250 !default;
 
-$spacing-increments:      0.6 1.6 2.6 4.2 6.8 11 14 29 46 75 !default;
+$spacing-increments:      0.6 1.4 2.6 4.2 6.8 11 14 29 46 75 !default;
 
 // Borders.
 $default-border-radius:   2px;
