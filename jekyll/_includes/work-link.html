@@ -1,0 +1,8 @@
+<a href="{{ include.work.url | relative_url }}" title="{{ include.work.title }}" class="flex items-baseline relative px-2 pt-3 pb-4 animate mouseenter-focusIn relative">
+  <div class="cover absolute wp-100 hp-100 cbg-white z-1 a-0"></div>
+  <div class="col-2 heading antialiased tn-2 cg-4 stagger-item">0{% if include.next %}{{ forloop.index | plus: 1 }}{% else %}{{ forloop.index }}{% endif %}</div>
+  <div class="stagger-item">
+    <h1 class="heading t-0 md-t-2 mb-1 antialased c-black">{{ include.work.title }}</h1>
+    <div class="heading tn-2 cg-4 antialiased">{% for role in include.work.roles %}{{ role }}{% if forloop.last != true %}, {% endif %}{% endfor %}</div>
+  </div>
+</a>

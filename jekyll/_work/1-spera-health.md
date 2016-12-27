@@ -10,8 +10,9 @@ overview: |
 sections:
   -
     type: 'assets'
-    background: '#2eb1ef'
-    shadow: 1
+    background:
+      color: '#2eb1ef'
+      offset: true
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Desktop-Main.png
@@ -26,7 +27,9 @@ sections:
       At the center of the alumni's experience are the home and activity feed. The home page provides an overview of tasks and notifications for the individual, while the feed provides an overview of the activity in an alumni's network.
   -
     type: 'assets'
-    shadow: 1
+    background:
+      color: '#f7f8f9'
+      offset: false
     assets:
       -
         width: 4
@@ -47,7 +50,9 @@ sections:
       The first objective of this project was to identify a visual direction for the platform. The direction would inform the design of further screens and components in the design system. Spera's founders wanted the platform to feel light-hearted and professional.
   -
     type: 'assets'
-    shadow: 1
+    background:
+      color: '#f7f8f9'
+      offset: false
     assets:
       -
         width: 4
@@ -68,6 +73,9 @@ sections:
       The first objective of this project was to identify a visual direction for the platform. The direction would inform the design of further screens and components in the design system. Spera's founders wanted the platform to feel light-hearted and professional.
   -
     type: 'assets'
+    background:
+      color: '#f7f8f9'
+      offset: false
     assets:
       -
         width: 4
@@ -88,15 +96,18 @@ sections:
       The first objective of this project was to identify a visual direction for the platform. The direction would inform the design of further screens and components in the design system. Spera's founders wanted the platform to feel light-hearted and professional.
   -
     type: 'assets'
-    background: '#f7f8f9'
-    shadow: 1
+    background:
+      color: '#f7f8f9'
+      offset: false
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Desktop-Home.png
         alt: 'Spera Health desktop dashboard.'
   -
     type: 'assets'
-    shadow: 1
+    background:
+      color: '#f7f8f9'
+      offset: false
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Desktop-Main.png
@@ -114,7 +125,9 @@ sections:
         alt: 'Spera Health desktop dashboard.'
   -
     type: 'assets'
-    background: '#f7f8f9'
+    background:
+      color: '#f7f8f9'
+      offset: false
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Pattern-Library.png

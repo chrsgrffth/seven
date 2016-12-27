@@ -9,7 +9,7 @@ export default {
         TweenMax.staggerFromTo('.animate .stagger-item', 0.27, {y: 50, opacity: 0}, {y: 0, opacity: 1}, 0.05);
         break;
       case 'out':
-        TweenMax.staggerTo('.animate .stagger-item', 0.27, {y: -50, opacity: 0}, 0.05);
+        TweenMax.to('.animate .stagger-item', 0.27, {y: -50, opacity: 0}, 0.05);
         break;
     }
   },
@@ -17,10 +17,12 @@ export default {
   focus (el, direction) {
     switch (direction) {
       case 'in':
-        TweenMax.staggerTo($(el).find('.stagger-item'), 0.27, {y: -15}, 0.05);
+        TweenMax.to($('.animate').not(el), 0.36, {opacity: 0.27}, 0.05);
+        TweenMax.staggerTo($(el).find('.stagger-item'), 0.36, {y: -15}, 0.05);
         break;
       case 'out':
-        TweenMax.staggerTo($(el).find('.stagger-item'), 0.27, {y: 0}, 0.05);
+        TweenMax.to($('.animate').not(el), 0.36, {opacity: 1}, 0.05);
+        TweenMax.staggerTo($(el).find('.stagger-item'), 0.36, {y: 0}, 0.05);
         break;
     }
   },

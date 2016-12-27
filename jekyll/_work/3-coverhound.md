@@ -1,8 +1,9 @@
 ---
-title: CoverHound
-slug: coverhound
+title: Coverhound
+slug: cover-hound
+categories: visual design
 year: 2015
 roles:
- - Visual Design
- - Interaction Design
+ - Product Design
+ - Front-End Development
 ---

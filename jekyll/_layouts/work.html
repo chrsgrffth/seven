@@ -2,54 +2,75 @@
 layout: default
 ---
 
-<article class="py-7 animate">
-  <section class="mb-5 px-2">
-    <div class="container">
-      <div class="md-flex sm-px-2 items-baseline">
-        <div class="md-col-2 stagger-item">
-          <h2 class="display tn-2 cg-4 antialiased mb-2">{{ page.year }}</h2>
-        </div>
-        <div class="md-col-6">
-          <h1 class="display t-1 md-t-2 mb-2 stagger-item">{{ page.title }}</h1>
-          <div class="cg-1 antialiased mb-4 stagger-item">{{ page.overview | markdownify }}</div>
-          <div class="flex mln-2 stagger-item">
-            <div class="px-2">
-              <div class="heading tn-2 cg-4 antialiased">{% for role in page.roles %}{{ role }}{% if forloop.last != true %}, {% endif %}{% endfor %}</div>
+<main>
+  <article class="py-7 animate">
+    <section class="mb-5 px-2">
+      <div class="container">
+        <div class="md-flex sm-px-2 items-baseline">
+          <div class="md-col-2 stagger-item">
+            <h2 class="display tn-2 cg-4 antialiased mb-2">{{ page.year }}</h2>
+          </div>
+          <div class="md-col-6">
+            <h1 class="display t-1 md-t-2 mb-2 stagger-item">{{ page.title }}</h1>
+            <div class="cg-1 antialiased mb-4 stagger-item">{{ page.overview | markdownify }}</div>
+            <div class="flex mln-2 stagger-item">
+              <div class="px-2">
+                <div class="heading tn-2 cg-4 antialiased">{% for role in page.roles %}{{ role }}{% if forloop.last != true %}, {% endif %}{% endfor %}</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  {% for section in page.sections %}
-    <section {% if section.background %}class="pt-4 pb-2 mb-4 stagger-item relative"{% else %}class="mb-4 stagger-item relative"{% endif %}>
-        {% if section.background %}
-          <div class="absolute top-0 right-0 hp-80 wp-90 zn-1 stagger-item" style="background-color: {{ section.background }}"></div>
-        {% endif %}
-
-
-        {% if section.type == 'assets' %}
-          <div class="container o-auto">
-            <div class="flex justify-center wp-250 md-wp-100 px-2 lg-px-0">
-              {% for asset in section.assets %}
-                <div class="p-1 {% if asset.width %}col-{{ asset.width }}{% endif %}">
-                  <img src="{{ asset.url }}" class="wp-100 {% if section.shadow %}shadow{% endif %}" />
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        {% endif %}
-
-        {% if section.type == 'markdown' %}
-          <div class="container">
-            <div class="md-col-6 md-push-2 markdown px-2">
-              {{ section.content | markdownify }}
-            </div>
-          </div>
-        {% endif %}
-
     </section>
-  {% endfor %}
 
-</article>
+    {% for section in page.sections %}
+      <section
+        {% if section.background %}
+          class="py-4 mb-5 stagger-item relative"
+        {% else %}
+          class="mb-5 stagger-item relative"
+        {% endif %}
+        {% if section.background.offset == false %}
+          style="background-color: {{ section.background.color }}"
+        {% endif %}
+      >
+
+          {% if section.background.offset %}
+            <div class="absolute top-0 right-0 hp-80 wp-90 zn-1 stagger-item" style="background-color: {{ section.background.color }}"></div>
+          {% endif %}
+
+          {% if section.type == 'assets' %}
+            <div class="container o-auto">
+              <div class="flex justify-center wp-250 md-wp-100 px-2 lg-px-0">
+                {% for asset in section.assets %}
+                  <div class="p-1 {% if asset.width %}col-{{ asset.width }}{% endif %}">
+                    <img src="{{ asset.url }}" class="wp-100" />
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if section.type == 'markdown' %}
+            <div class="container">
+              <div class="md-col-6 md-push-2 markdown px-2">
+                {{ section.content | markdownify }}
+              </div>
+            </div>
+          {% endif %}
+
+      </section>
+    {% endfor %}
+  </article>
+
+  <footer>
+    <div class="container">
+      {% for work in site.work %}
+        {% if work.slug == page.slug %}
+          {% include work-link.html work=page.next next=1 %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </footer>
+
+</main>
