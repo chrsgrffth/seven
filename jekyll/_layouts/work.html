@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main>
-  <article class="py-7 animate">
+  <article class="pt-7 pb-5 animate">
     <section class="mb-5 px-2">
       <div class="container">
         <div class="md-flex sm-px-2 items-baseline">
@@ -61,16 +61,19 @@ layout: default
 
       </section>
     {% endfor %}
+    <div class="bb-8 mt-4 stagger-item"></div>
   </article>
 
-  <footer>
-    <div class="container">
-      {% for work in site.work %}
-        {% if work.slug == page.slug %}
-          {% include work-link.html work=page.next next=1 %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </footer>
+  {% if page.next %}
+    <footer>
+      <div class="container">
+        {% for work in site.work %}
+          {% if work.slug == page.slug %}
+            {% include work-link.html work=page.next next=1 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </footer>
+  {% endif %}
 
 </main>

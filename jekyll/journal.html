@@ -7,21 +7,23 @@ layout: default
     <div class="container">
 
       {% for post in site.posts %}
-        <article class="md-col-8 sm-px-2 mb-5">
+        <article class="md-col-6 md-push-2 sm-px-2 mb-5">
           <a href="{{ post.url | relative_url }}">
             <h2 class="display tn-2 cg-4 antialiased mb-2 stagger-item">07 Jan 2017</h2>
             <h1 class="display t-1 md-t-3 mb-1 stagger-item">{{ post.title }}</h1>
+
             {% if forloop.first %}
-            <div class="heading tn-2 cg-4 antialiased mb-2 relative">
-              <div class="mln-3 absolute stagger-item">/</div>
-              <div class="stagger-item">Thoughts</div>
-            </div>
-            {% endif %}
-            <!--
-            <div class="cg-1 antialiased mb-4 stagger-item tn-1">
-              <p>There’s more to any decision than we tend to give credit to. When we can’t prove or argue a point within ourselves, we say we’re going with our “gut.”</p>
-            </div>
+              <div class="stagger-item">
+                <div>Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis.</p>
+              </div>
+              <!--
+              <div class="heading tn-2 cg-4 antialiased mb-2 relative">
+                <div class="mln-3 absolute stagger-item">/</div>
+                <div class="stagger-item">Thoughts</div>
+              </div>
             -->
+            {% endif %}
+
           </a>
         </article>
       {% endfor %}

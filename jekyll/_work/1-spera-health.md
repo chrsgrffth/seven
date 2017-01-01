@@ -12,7 +12,7 @@ sections:
     type: 'assets'
     background:
       color: '#2eb1ef'
-      offset: true
+      offset: false
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Desktop-Main.png
@@ -135,4 +135,9 @@ sections:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Pattern-Library--Form.png
         alt: 'Spera Health desktop dashboard.'
+  -
+    type: 'markdown'
+    content: |
+      ## Looking Forward
+      The first objective of this project was to identify a visual direction for the platform. The direction would inform the design of further screens and components in the design system. Spera's founders wanted the platform to feel light-hearted and professional.
 ---
