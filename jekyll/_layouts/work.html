@@ -41,7 +41,7 @@ layout: default
 
           {% if section.type == 'assets' %}
             <div class="container o-auto">
-              <div class="flex justify-center wp-250 md-wp-100 px-2 lg-px-0">
+              <div class="flex flex-wrap justify-center wp-250 md-wp-100 px-2 lg-px-0">
                 {% for asset in section.assets %}
                   <div class="p-1 {% if asset.width %}col-{{ asset.width }}{% endif %}">
                     <img src="{{ asset.url }}" class="wp-100" />
