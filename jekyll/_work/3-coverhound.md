@@ -118,4 +118,15 @@ sections:
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-AutoQuote-Drivers.png
         alt: 'Design Kollective marketing website homepage.'
+
+  -
+    type: 'assets'
+    background:
+      color: '#f7f8f9'
+      offset: false
+    assets:
+      -
+        width: 6
+        url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-BundleQuote-Compare-Vertical.png
+        alt: 'Design Kollective marketing website homepage.'
 ---
