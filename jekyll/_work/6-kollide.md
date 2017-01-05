@@ -15,7 +15,7 @@ sections:
       offset: false
     assets:
       -
-        width: 8
+        width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Kollide-Landing.png
         alt: 'Design Kollective Collection Page.'
   -

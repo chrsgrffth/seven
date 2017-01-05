@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+
+.heading {
+  @extend .display;
+  @extend .uppercase;
+  @extend .tracked;
+}
+
+.hover-flipUp {
+  @extend .relative;
+  overflow: hidden;
+
+  &::before {
+    @extend .d-block;
+    @extend .wp-100;
+    @extend .hp-80;
+    @extend .absolute;
+    @extend .zn-1;
+    @extend .cbgg-7;
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translate3d(0,100%,0);
+    transition: transform 0.27s ease-in, opacity 0.27s ease-in;
+  }
+
+  &:hover {
+
+    &::before {
+      transform: translate3d(0,-50%,0);
+    }
+  }
+}

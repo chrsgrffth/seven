@@ -16,8 +16,8 @@ sections:
       offset: false
     assets:
       -
-        width: 8
-        url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Paradox-Logotype.png
+        width: 12
+        url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Landing.png
         alt: 'Design Kollective Collection Page.'
   -
     type: 'markdown'

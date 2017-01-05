@@ -11,7 +11,7 @@ layout: default
             <h2 class="display tn-2 cg-4 antialiased mb-2">{{ page.year }}</h2>
           </div>
           <div class="md-col-6">
-            <h1 class="display t-1 md-t-2 mb-2 stagger-item">{{ page.title }}</h1>
+            <h1 class="display t-1 md-t-3 mb-2 stagger-item">{{ page.title }}</h1>
             <div class="cg-1 antialiased mb-4 stagger-item">{{ page.overview | markdownify }}</div>
             <div class="flex mln-2 stagger-item">
               <div class="px-2">
@@ -41,7 +41,7 @@ layout: default
 
           {% if section.type == 'assets' %}
             <div class="container o-auto">
-              <div class="flex flex-wrap justify-center wp-250 md-wp-100 px-2 lg-px-0">
+              <div class="flex flex-wrap md-justify-center items-center wp-250 md-wp-100 px-2 lg-px-0 minh-7">
                 {% for asset in section.assets %}
                   <div class="p-1 {% if asset.width %}col-{{ asset.width }}{% endif %}">
                     <img src="{{ asset.url }}" class="wp-100" />

@@ -12,15 +12,8 @@
 }
 
 @import 'settings';
+@import 'interactions';
 @import 'node_modules/decent-scss/modules/all';
 
 @import 'global/base';
 @import 'global/markdown';
-
-* { box-sizing: border-box; }
-
-.heading {
-  @extend .display;
-  @extend .uppercase;
-  @extend .tracked;
-}

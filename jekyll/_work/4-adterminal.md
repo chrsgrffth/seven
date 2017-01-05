@@ -43,7 +43,7 @@ sections:
         alt: 'Design Kollective shopping page.'
       -
         width: 6
-        url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Users-Edit.png
+        url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Settings-Users-Edit.png
         alt: 'Design Kollective shopping page.'
   -
     type: 'assets'
