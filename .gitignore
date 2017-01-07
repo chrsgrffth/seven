@@ -1,10 +1,12 @@
 public
-_site
 .sass-cache
 .jekyll-metadata
 .DS_Store
 node_modules
 
-# Ignore the rakefile, autosmush until I can secure them.
+# Ignore files with credentials.
+_config.production.yml
+_config.yml
+
 Rakefile
 autosmush

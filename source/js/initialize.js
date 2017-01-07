@@ -1,6 +1,7 @@
 import TweenMax from 'gsap/src/uncompressed/TweenMax'
 import WebFont from 'webfontloader'
 import Transition from './helpers/transitions'
+import Tracking from './helpers/tracking'
 
 $(function() {
   'use strict';
@@ -10,6 +11,9 @@ $(function() {
   // Transition the page in when JS has loaded.
   Transition.page('in');
   Transition.bindEventListeners();
+
+  // Track the initial page load.
+  Tracking.trackPageview();
 
   // Load in the fonts when JS has loaded.
   WebFont.load({
@@ -43,6 +47,9 @@ $(function() {
         Transition.page('in');
         Transition.bindEventListeners();
       }
+    },
+    onAfter: function () {
+      Tracking.trackPageview(smoothstate.href);
     }
   };
 
