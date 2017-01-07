@@ -5,5 +5,6 @@ _site
 .DS_Store
 node_modules
 
-# Ignore the rakefile until I can secure it.
+# Ignore the rakefile, autosmush until I can secure them.
 Rakefile
+autosmush
