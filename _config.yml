@@ -40,11 +40,6 @@ defaults:
     values:
       layout: work
 
-    # path: "/work"
-    # layout: "work"
-    # output: true
-
-
 # Build settings
 markdown: kramdown
 livereload: true
@@ -57,4 +52,3 @@ keep_files:
   - 'js'
 source: jekyll
 destination: public
-
