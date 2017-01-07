@@ -2,10 +2,20 @@
 layout: default
 ---
 
-<main class="pt-7 px-1 px-sm-2">
-  <div class="container">
+<main class="pt-7 pb-5 px-1 px-sm-2">
+  <section class="container">
     {% for work in site.work %}
       {% include work-link.html work=work forloop=forloop %}
     {% endfor %}
-  </div>
+  </section>
+
+  <!--
+  <section class="animate px-2 mt-5 py-5">
+    <div class="container stagger-item">
+      <div class="md-col-6 md-push-2 cg-1 t-1">
+        <p>I'm a designer and front-end developer. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
+      </div>
+    </div>
+  </section>
+  -->
 </main>

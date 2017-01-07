@@ -1,4 +1,4 @@
-<a href="{{ include.work.url | relative_url }}" title="{{ include.work.title }}" class="flex items-baseline relative px-2 pt-3 pb-4 animate mouseenter-focusIn relative">
+<a href="{{ include.work.url | relative_url }}" title="{{ include.work.title }}" class="flex items-baseline relative pt-3 pb-4 animate mouseenter-focusIn relative">
   <div class="cover absolute top-0 left-0 wp-100 hp-100 cbg-white z-1 a-0"></div>
   <div class="col-2 heading antialiased tn-2 cg-4 stagger-item">0{% if include.next %}{{ forloop.index | plus: 1 }}{% else %}{{ forloop.index }}{% endif %}</div>
   <div class="stagger-item">

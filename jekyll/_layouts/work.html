@@ -6,7 +6,7 @@ layout: default
   <article class="pt-7 pb-5 animate">
     <section class="mb-5 px-2">
       <div class="container">
-        <div class="md-flex sm-px-2 items-baseline">
+        <div class="md-flex items-baseline">
           <div class="md-col-2 stagger-item">
             <h2 class="display tn-2 cg-4 antialiased mb-2">{{ page.year }}</h2>
           </div>
@@ -26,9 +26,9 @@ layout: default
     {% for section in page.sections %}
       <section
         {% if section.background %}
-          class="py-4 mb-5 stagger-item relative"
+          class="py-4 px-2 mb-5 stagger-item relative"
         {% else %}
-          class="mb-5 stagger-item relative"
+          class="px-2 mb-5 stagger-item relative"
         {% endif %}
         {% if section.background.offset == false %}
           style="background-color: {{ section.background.color }}"
@@ -53,7 +53,7 @@ layout: default
 
           {% if section.type == 'markdown' %}
             <div class="container">
-              <div class="md-col-6 md-push-2 markdown px-2">
+              <div class="md-col-6 md-push-2 markdown">
                 {{ section.content | markdownify }}
               </div>
             </div>
@@ -65,7 +65,7 @@ layout: default
   </article>
 
   {% if page.next %}
-    <footer class="pb-3">
+    <footer class="pb-3 px-2">
       <div class="container">
         {% for work in site.work %}
           {% if work.slug == page.slug %}
