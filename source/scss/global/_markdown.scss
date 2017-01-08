@@ -9,10 +9,17 @@
   p {
     @extend .antialiased;
     @extend .cg-1;
+    @extend .mb-3;
+  }
 
-    &:not(:last-of-type) {
-      @extend .mb-5;
-    }
+  blockquote,
+  blockquote p {
+    @extend .t-2;
+    @extend .tw-semibold;
+    @extend .lg-mln-1;
+    @extend .pr-3;
+    @extend .py-2;
+    @extend .c-black;
   }
 
 }

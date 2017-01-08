@@ -2,8 +2,21 @@
 layout: default
 ---
 
-<article class="px-2">
-  <div class="container">
-    {{ content }}
-  </div>
+<article class="sm-pt-4 md-pt-5 lg-pt-8 px-2 animate">
+  <section class="container mb-2">
+    <div class="md-col-6 md-push-2">
+      <h1 class="display t-1 c-black md-t-3 mb-3 stagger-item">{{ page.title }}</h1>
+      <div class="markdown stagger-item">{{ content }}</div>
+    </div>
+  </section>
+  <section>
+    <div class="container mb-4">
+    <div class="flex items-baseline relative pt-3 pb-4 animate">
+      <div class="col-2 heading antialiased tn-2 cg-4 stagger-item">Share</div>
+      <div class="flex stagger-item mln-1">
+        <a class="heading tn-2 p-1 c-black antialiased ">Twitter</a>
+        <a class="heading tn-2 p-1 c-black antialiased ">Facebook</a>
+      </div>
+    </div>
+  </section>
 </article>

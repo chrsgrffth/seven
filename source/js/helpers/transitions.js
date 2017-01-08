@@ -15,14 +15,23 @@ export default {
   },
 
   focus (el, direction) {
+
+    var axis = $(el).data('axis')
+
+    if (axis == 'x') {
+      var properties = [{x: -15}, {x: 0}]
+    } else {
+      var properties = [{y: -15}, {y: 0}]
+    }
+
     switch (direction) {
       case 'in':
         TweenMax.to($('.animate').not(el), 0.36, {opacity: 0.27}, 0.05);
-        TweenMax.staggerTo($(el).find('.stagger-item'), 0.36, {y: -15}, 0.05);
+        TweenMax.staggerTo($(el).find('.stagger-item'), 0.36, properties[0], 0.05);
         break;
       case 'out':
         TweenMax.to($('.animate').not(el), 0.36, {opacity: 1}, 0.05);
-        TweenMax.staggerTo($(el).find('.stagger-item'), 0.36, {y: 0}, 0.05);
+        TweenMax.staggerTo($(el).find('.stagger-item'), 0.36, properties[1], 0.05);
         break;
     }
   },

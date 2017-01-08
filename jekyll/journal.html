@@ -3,31 +3,19 @@ layout: default
 ---
 
 <main>
-  <section class="py-7 animate">
+  <section class="py-7">
     <div class="container">
-
       {% for post in site.posts %}
-        <article class="md-col-6 md-push-2 sm-px-2 mb-5">
-          <a href="{{ post.url | relative_url }}">
-            <h2 class="display tn-2 cg-4 antialiased mb-2 stagger-item">07 Jan 2017</h2>
-            <h1 class="display t-1 md-t-3 mb-1 stagger-item">{{ post.title }}</h1>
-
+        <a href="{{ post.url | relative_url }}" class="d-block md-col-6 sm-px-2 mb-5 animate mouseenter-focusIn" data-axis="x">
+          <div class="stagger-item">
+            <h2 class="display tn-2 cg-4 antialiased mb-2">07 Jan 2017</h2>
+            <h1 class="display t-1 c-black md-t-3">{{ post.title }}</h1>
             {% if forloop.first %}
-              <div class="stagger-item">
-                <div>Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis.</p>
-              </div>
-              <!--
-              <div class="heading tn-2 cg-4 antialiased mb-2 relative">
-                <div class="mln-3 absolute stagger-item">/</div>
-                <div class="stagger-item">Thoughts</div>
-              </div>
-            -->
+              <div class="markdown cg-2 antialiased mt-2">{{ post.preview }}</div>
             {% endif %}
-
-          </a>
-        </article>
+          </div>
+        </a>
       {% endfor %}
-
     </div>
   </section>
 </main>
