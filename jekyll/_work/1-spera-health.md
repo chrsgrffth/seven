@@ -34,15 +34,15 @@ sections:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Home.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile home page.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Contacts.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile contacts page.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Feed.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile feed page.'
   -
     type: 'markdown'
     content: |
@@ -57,15 +57,15 @@ sections:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Contacts.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile contacts page.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Messages--Top.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile messages page.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Messages.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile messages.'
   -
     type: 'markdown'
     content: |
@@ -80,15 +80,15 @@ sections:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Settings-Sharing.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile sharing settings.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-Progress--ChartOptions.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile chart option settings.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Mobile-GoalCompleted.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health mobile goal completed screen.'
   -
     type: 'markdown'
     content: |
@@ -102,21 +102,21 @@ sections:
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Desktop-Home.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health desktop homepage.'
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Desktop-Main.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health main page.'
   -
     type: 'markdown'
     content: |
       ## A Cohesive System
-      ...
+      Design systems play an important role in any digital interface and for Spera this was no different. The pattern library and styleguide will communicate the meaning of visual styles to both developers and designers who are added to the team and will continue to build upon the system I've created.
   -
     type: 'assets'
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Pattern-Library--Specs.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health pattern library specifications.'
   -
     type: 'assets'
     background:
@@ -125,13 +125,8 @@ sections:
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Pattern-Library.png
-        alt: 'Spera Health desktop dashboard.'
+        alt: 'Spera Health pattern library main elements.'
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Spera-Pattern-Library--Form.png
-        alt: 'Spera Health desktop dashboard.'
-  -
-    type: 'markdown'
-    content: |
-      ## Looking Forward
-      ...
+        alt: 'Spera Health pattern library form elements.'
 ---

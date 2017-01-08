@@ -18,15 +18,15 @@ sections:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Consent.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile consent request form.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Vehicles.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile vehicles screen.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Compare.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile compare screen.'
   -
     type: 'markdown'
     content: |
@@ -40,11 +40,11 @@ sections:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Consent.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile consent request page.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Vehicles.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile vehicles page.'
   -
     type: 'markdown'
     content: |
@@ -61,11 +61,11 @@ sections:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Drivers.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile drivers screen.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Vehicles.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile vehicles screen.'
 
   -
     type: 'markdown'
@@ -83,15 +83,15 @@ sections:
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Vehicles-Focused.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile vehicles screen - focused state.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Drivers-Focused.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile drivers screen - focused state.'
       -
         width: 4
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-Mobile-Drivers-Incidents.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound mobile drivers incidents reporting form.'
   -
     type: 'assets'
     background:
@@ -101,23 +101,23 @@ sections:
       -
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-AutoQuote-Vehicles-Lookup.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound auto quote vehicle lookup form.'
       -
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-AutoQuote-Vehicles-Edit.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound auto quote vehicle edit form.'
       -
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-AutoQuote-Vehicles.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound auto quote vehicles index screen.'
       -
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-AutoQuote-Vehicles-Tooltip.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound auto quote vehicles tooltip example.'
       -
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-AutoQuote-Drivers.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound .'
 
   -
     type: 'assets'
@@ -128,5 +128,5 @@ sections:
       -
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Coverhound-BundleQuote-Compare-Vertical.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'CoverHound bundled insurance compare page.'
 ---

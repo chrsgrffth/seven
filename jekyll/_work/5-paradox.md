@@ -16,7 +16,7 @@ sections:
       -
         width: 5
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Paradox-Logotype.png
-        alt: 'Design Kollective Collection Page.'
+        alt: 'Paradox logotype.'
   -
     type: 'markdown'
     content: |
@@ -30,11 +30,11 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Paradox-Early-MarkConcepts.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Paradox early logo concepts.'
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Paradox-Early-TypeConcepts.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Paradox early logotype concepts.'
 
   -
     type: 'assets'
@@ -45,5 +45,5 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Paradox-Guides.svg
-        alt: 'Design Kollective shopping page.'
+        alt: 'Paradox logo guides.'
 ---

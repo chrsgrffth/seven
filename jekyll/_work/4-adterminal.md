@@ -16,7 +16,7 @@ sections:
     assets:
       -
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Dashboard.png
-        alt: 'Design Kollective Collection Page.'
+        alt: 'Adterminal main dashboard.'
   -
     type: 'markdown'
     content:
@@ -30,7 +30,7 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Dashboard-Elements.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Adterminal dashboard - all elements.'
   -
     type: 'assets'
     background:
@@ -40,11 +40,11 @@ sections:
       -
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Settings-Dashboards-Edit.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Adterminal dashboard settings.'
       -
         width: 6
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Settings-Users-Edit.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Adterminal user settings.'
   -
     type: 'assets'
     background:
@@ -54,13 +54,13 @@ sections:
       -
         width: 8
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Marketing-Homepage.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Adterminal marketing website homepage.'
       -
         width: 8
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Marketing-Integrations.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Adterminal marketing website integrations list page.'
       -
         width: 8
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Adterminal-Marketing-Pricing.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Adterminal marketing website pricing page.'
 ---

@@ -17,7 +17,7 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Kollide-Landing.png
-        alt: 'Design Kollective Collection Page.'
+        alt: 'Kollide website landing page.'
   -
     type: 'markdown'
     content: |
@@ -31,11 +31,11 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Kollide-Vision-Values.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Kollide vision and values state.'
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Kollide-Game-Story.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Kollide game backstory state.'
   -
     type: 'assets'
     background:
@@ -45,6 +45,6 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Kollide-Blog-Post.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Kollide blog post.'
 
 ---

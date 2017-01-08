@@ -18,7 +18,7 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Landing.png
-        alt: 'Design Kollective Collection Page.'
+        alt: 'Jonathan Gottschall\'s website landing page.'
   -
     type: 'markdown'
     content: |
@@ -32,15 +32,15 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Quote.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Jonathan Gottschall\'s website book quote section.'
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Review.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Jonathan Gottschall\'s website review section.'
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Posts.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Jonathan Gottschall\'s website blog posts index.'
   -
     type: 'assets'
     background:
@@ -50,5 +50,5 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-About.png
-        alt: 'Design Kollective shopping page.'
+        alt: 'Jonathan Gottschall\'s website about page.'
 ---

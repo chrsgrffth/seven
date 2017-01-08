@@ -145,19 +145,19 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/DesignKollective-Admin-Storefront.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'Design Kollective storefront adminstration page.'
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/DesignKollective-Admin-Inventory.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'Design Kollective inventory administration page.'
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/DesignKollective-Admin-Transactions.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'Design Kollective transaction administration page.'
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/DesignKollective-Admin-Sales.png
-        alt: 'Design Kollective marketing website homepage.'
+        alt: 'Design Kollective flash sale administration page.'
 
   -
     type: 'markdown'
