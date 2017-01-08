@@ -6,9 +6,9 @@ layout: default
   <section class="py-7">
     <div class="container">
       {% for post in site.posts %}
-        <a href="{{ post.url | relative_url }}" class="d-block md-col-6 sm-px-2 mb-5 animate mouseenter-focusIn" data-axis="x">
+        <a href="{{ post.url | relative_url }}" class="d-block md-col-6 sm-px-2 pt-3 {% if forloop.first %}pb-4{% else %}pb-3{% endif %} animate mouseenter-focusIn" data-axis="x">
           <div class="stagger-item">
-            <h2 class="display tn-2 cg-4 antialiased mb-2">07 Jan 2017</h2>
+            <h2 class="display tn-2 cg-4 antialiased mb-2">{{ post.date | date_to_string }}</h2>
             <h1 class="display t-1 c-black md-t-3">{{ post.title }}</h1>
             {% if forloop.first %}
               <div class="markdown cg-2 antialiased mt-2">{{ post.preview }}</div>
