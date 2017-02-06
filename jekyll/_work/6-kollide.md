@@ -16,7 +16,7 @@ sections:
     assets:
       -
         width: 12
-        url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Kollide-Landing.png
+        url: 'https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Kollide-Landing.png'
         alt: 'Kollide website landing page.'
   -
     type: 'markdown'

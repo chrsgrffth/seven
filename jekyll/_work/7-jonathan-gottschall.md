@@ -3,9 +3,9 @@ title: Jonathan Gottschall
 slug: gottschall
 year: 2015
 roles:
- - Visual Design
- - Interaction Design
- - Front-End Development
+ - 'Visual Design'
+ - 'Interaction Design'
+ - 'Front-End Development'
 overview: |
   A college professor his study of evolutionary psychology to a personal level, joining an MMA gym and fighting for answers to the question: "Why do men fight?" After his experience, Jonathan Gottschall wrote "The Professor in the Cage" and looked to me for a platform to market this new work.
 sections:
@@ -17,8 +17,8 @@ sections:
     assets:
       -
         width: 12
-        url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Landing.png
-        alt: 'Jonathan Gottschall\'s website landing page.'
+        url: 'https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Landing.png'
+        alt: "Jonathan Gottschall's website landing page."
   -
     type: 'markdown'
     content: |
@@ -32,15 +32,15 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Quote.png
-        alt: 'Jonathan Gottschall\'s website book quote section.'
+        alt: "Jonathan Gottschall's website book quote section."
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Review.png
-        alt: 'Jonathan Gottschall\'s website review section.'
+        alt: "Jonathan Gottschall's website review section."
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-Posts.png
-        alt: 'Jonathan Gottschall\'s website blog posts index.'
+        alt: "Jonathan Gottschall's website blog posts index."
   -
     type: 'assets'
     background:
@@ -50,5 +50,5 @@ sections:
       -
         width: 12
         url: https://s3-us-west-2.amazonaws.com/chrsgrffth/images/Gottschall-About.png
-        alt: 'Jonathan Gottschall\'s website about page.'
+        alt: "Jonathan Gottschall's website about page."
 ---
